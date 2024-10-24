@@ -1,0 +1,66 @@
+.catalog-container {
+  background-color: #121212;
+  padding: 0px 20px 20px 20px;
+}
+
+.blockk {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.catalog-items {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.catalog-item {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  background-color: #CCCCCC ;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.catalog-item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+  background-color: #1E1E1E ; /* Немного темнее при наведении */
+}
+
+.catalog-item.active {
+  background-color: #5F8C88; /* Более тёмный фон для активного элемента */
+}
+
+.catalog-item .catalog-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.catalog-item:hover .catalog-icon {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+
+.view-all-button {
+  background-color: transparent;
+  border: none;
+  color: #f4ce42;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.catalog-items::-webkit-scrollbar {
+  display: none;
+}

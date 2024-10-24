@@ -1,0 +1,276 @@
+.zakaz-container {
+    background-color: #121212;
+    color: white;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .zakaz-con{
+    padding: 20px;
+  }
+  
+  .zakaz-header {
+    padding: 30px 0px;
+        display: flex;
+        align-items: center;
+  }
+  .back-button img {
+    width: 30px;
+  }
+  .zakaz-back-button{
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    border: none;
+    cursor: pointer;
+  }
+  .zakaz-title{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .zakaz-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center;
+  }
+  
+  .zakaz-item {
+    display: flex;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    width: 700px; /* Ширина контейнера */
+    height: 96px; /* Высота контейнера */
+    background-color: #1E1E1E; /* Цвет фона для элемента */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px;
+    margin-bottom: 10px; /* Отступ между элементами */
+    gap: 10px; /* Пробел между изображением и деталями */
+    opacity: 1; /* Прозрачность */
+
+  }
+  
+  .item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .item-info {
+    flex-grow: 1;
+    margin-left: 10px;
+    line-height: 29.36px;
+  }
+  
+  .item-info h3 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 10.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+  }
+  
+  .item-info p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 10.52px;
+    text-align: left;
+    color: #6A6A6E;
+
+  }
+  #tg{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+color: #FFFFFF;
+  }
+  
+  .item-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+height: 40px;
+border-radius: 24px;
+opacity: 0px;
+background: #19191D;
+
+  }
+  
+  .quantity-button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 25px;
+    cursor: pointer;
+text-align: center;
+  }
+  
+  .quantity-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  #plus{
+    background: #12C358;
+
+  }
+  #plus:hover{
+    background: #2d2d2d;
+  }
+  #minus{
+    background: #F73C54;
+
+  }
+  #minus:hover{
+    background: #2d2d2d;
+  }
+  
+  
+
+
+
+  .zakaz-summary {
+    background: #1E1E1E;
+    padding:20px 20px 70px 20px;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 20px;
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    width: 700px; /* Убедитесь, что ширина блока задана */
+    height: auto; /* Задайте auto для высоты, чтобы она подстраивалась под содержимое */
+}
+
+.zakaz-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.94px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%; /* Задаем ширину 100% для текстового элемента */
+}
+
+.zakaz-summary .total {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.pay-button-container {
+    display: flex;
+    justify-content: center; /* Центрируем контейнер кнопки */
+    width: 100%; /* Ширина контейнера для центрирования */
+}
+
+
+
+  .pay-button {
+    background: linear-gradient(180deg, #575757 0%, #343434 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 280px;
+    height: 48px;
+    
+  transform: translateY(-5px) scale(0.99);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .pay-button:hover {
+    background: none;
+    color: white;
+    
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+    transition: filter 0.3s ease;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2d2d2d;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .bottom-nav img {
+    width: 30px;
+  }
+  
+  .bottom-nav img.active {
+    filter: brightness(1.5);
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .no-orders-message {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .zakaz-im{
+    width: 100px;
+  }
+
+
+  @media (max-width: 480px) { 
+    .zakaz-item{
+      width: 365px;
+    }
+    .zakaz-summary{
+      width: 362px;
+    }
+    .zakaz-con{
+      padding: 0px;
+    }
+    .zakaz-title{
+      height: 50px;
+      display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     font-size: 30px;
+    }
+    .item-info h3{
+      font-size: 20px;
+      line-height: 17.36px;
+    }
+    .item-info p{
+      font-size: 12px;
+    }
+    #tg {
+      font-size: 22px;
+    }
+    .item-quantity{
+      width: 85px;
+      height: 35px;
+    }
+    .zakaz-im{
+      width: 70px;
+    }
+    
+  }

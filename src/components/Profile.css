@@ -1,0 +1,118 @@
+.profile-container {
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .profile-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .profile-info {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .profile-info-header {
+    display: flex;
+    background-color: #333333 ; /* Немного темнее при наведении */
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-name-email h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .profile-name-email p {
+    margin: 5px 0 0;
+    color: #b3b3b3;
+  }
+  
+  .edit-icon {
+    margin-left: auto;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .edit-icon:hover{
+    transform: translateY(-5px) scale(1.09);
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .profile-option:hover{
+  transform: translateY(-5px) scale(0.99);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #1E1E1E ; /* Немного темнее при наведении */
+  }
+
+  .profile-option:hover .iicon {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+    transition: filter 0.3s ease;
+  }
+  .edit-icon:hover .iicon {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+    transition: filter 0.3s ease;
+  }
+
+
+
+  .profile-option-icon {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .profile-back-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    border: none;
+    cursor: pointer;
+  }
+  .profile-option-text h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .profile-option-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #b3b3b3;
+  }

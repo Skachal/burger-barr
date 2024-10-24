@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #f1e3e3;
+}
+
+.menu-container {
+  background-color: #121212;
+  color: white;
+  padding: 0px 0px 60px 0px; /* Отступы */
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.catalog-item {
+  display: flex;
+  background-color: #333333  ;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  width: 231px;
+  height: 38px;
+}
+
+.catalog-item.active {
+  background-color: #f4ce42;
+  color: black;
+}
+
+.catalog-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 20px ;
+  justify-content: center;
+}
+
+.menu-item {
+  background-color: #333333;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 160px;
+  height: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #1E1E1E ; /* Немного темнее при наведении */
+}
+
+.menu-item-image {
+  position: absolute;
+  width: 140px;
+  z-index: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-item-info {
+  padding-top: 100px;
+  z-index: 1;
+  display: block;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.menu-item-info h3 {
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.menu-opisanie {
+  font-family: "Poppins", sans-serif;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.31px;
+  text-align: left;
+  color: #a5a5a5;
+}
+
+.menu-price-container {
+  height: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-price {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  text-align: left;
+  color: #fff;
+}
+
+.menu-weight {
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10.89px;
+  color: #6A6A6E;
+  width: 38px;
+  height: 18px;
+  border-radius: 10px;
+  border: 1px solid #16151B;
+  text-align: center;
+  background: #16151B;
+}
+
+.menu-favorite-button {
+  background: none;
+  border: none;
+  color: #121212; /* Сердечко черное по умолчанию */
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s, filter 0.3s;
+  filter: brightness(0);
+}
+
+.menu-favorite-button.favorite-active {
+  color: #333333; /* Изменяем цвет кнопки, если элемент в избранном */
+  filter: brightness(1);
+}
+
+
+
+@media (max-width: 768px) { 
+
+
+}
+
+@media (max-width: 480px) { 
+  .menu-items{
+    justify-content: flex-start;
+  }
+  .menu-item{
+width: 145px;
+height: 230px;
+  }
+}

@@ -1,0 +1,314 @@
+.favorite-container {
+  background-color: #121212;
+  color: white;
+  padding: 10px; /* Добавим отступы для всего контейнера */
+}
+
+.favorite-container h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.favorite-items {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  padding-bottom: 10px;
+}
+.favorite-item {
+  display: flex;
+  flex-direction: row; /* Устанавливаем направление flex для горизонтального размещения */
+  align-items: center; /* Центрирование по вертикали */
+  min-width: 320px; /* Широкие контейнеры для товаров */
+  max-width: 350px;
+  background: #22222A;
+
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 15px; /* Добавим внутренние отступы для лучшего отображения */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+.heart-icon.active {
+  filter: brightness(2.5); /* Подсветим активное сердечко */
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+}
+
+.burger-image {
+  width: 87px;
+  height: 66px;
+  object-fit: cover; /* Позволяет изображению сохранять пропорции и не растягиваться */
+  margin-right: 15px; /* Отступ справа для лучшего размещения текста */
+}
+
+.favorite-info h3 {
+  padding: 0px 0px 5px 0px;
+  margin: 0px;
+font-size: 20px;
+font-weight: 500;
+line-height: 19.36px;
+text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.favorite-info p {
+ margin: 0px;
+ padding: 0px;
+}
+.Opis{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  color: #6A6A6E;
+    font-family: 'Inter', sans-serif;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px 0px 0px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-p {
+font-size: 16px;
+font-weight: 600;
+line-height: 19.36px;
+text-align: left;
+color: white;
+font-family: 'Inter', sans-serif;
+}
+
+.weight-p {
+  display: flex;
+  border: #16151B 1px solid;
+  background: #16151B;
+
+  width: 38px;
+height: 18px;
+top: 10px;
+left: 196px;
+gap: 0px;
+border-radius: 10px;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10.89px;
+  color: #6A6A6E;
+
+}
+
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  top: -50px;
+}
+.iconss {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  top: 130px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  filter: brightness(0); 
+  margin-right: 10px;
+}
+
+/* Прячем полосу прокрутки */
+.favorite-items::-webkit-scrollbar {
+  display: none;
+}
+
+.favorite-items {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.cart-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: #f4ce42 3px solid;
+  display: flex;
+  justify-content: center;
+  background: url(../imgHome/KorzinaHome.png) no-repeat center center; /* Центрируем и убираем повтор */
+  background-size: 24px 24px; /* Устанавливает ширину 50px и высоту 40px */
+ /* Подгоняем изображение под контейнер */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+ position: absolute;
+ top: 110px;
+}
+
+.cart-circle.hidden {
+  opacity: 0;
+}
+
+.cart-icon {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.modal-content {
+  background-color: #16151B;
+  margin-top: 80px;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 600px;
+  color: white;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.fullscreen-burgers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.favorite-men{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.show-all-button{
+  border: none;
+  background: none;
+  width: 132px;
+height: 17px;
+opacity: 0px;
+color: #EDB216;
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+text-align: left;
+
+}
+
+.favorite-items {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  cursor: grab; /* Меняет курсор при наведении */
+}
+
+.favorite-items:active {
+  cursor: grabbing; /* Меняет курсор при клике и перетаскивании */
+}
+
+.favorite-items::-webkit-scrollbar {
+  display: none; /* Скрывает полосу прокрутки */
+}
+
+
+.favorite-container {
+  position: relative;
+  background-color: #121212;
+  color: white;
+  padding: 10px;
+}
+
+.scroll-buttons {
+  display: none; /* По умолчанию скрываем кнопки для мобильных */
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  font-size: 18px;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .scroll-buttons {
+    display: block; /* Включаем кнопки для ПК */
+  }
+
+  .favorite-items {
+    overflow: hidden; /* Отключаем автопрокрутку на ПК, заменяем на кнопки */
+  }
+}
+
+.favorite-items {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  cursor: grab;
+}
+
+.favorite-items:active {
+  cursor: grabbing;
+}
+
+.favorite-items::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,214 @@
+.orders-container {
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: white;
+    height: 100vh;
+  }
+  
+  .orders-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .orders-back-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    border: none;
+    cursor: pointer;
+  }
+  .orders-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .orders-status-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .orders-status-filter button {
+    background: none;
+    border: none;
+    color: #6A6A6E;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .orders-status-filter button.active {
+    background-color: #f4ce42; /* Yellow for active status */
+    color: black;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .order-item:hover {
+  transform: translateY(-5px) scale(0.99);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #1E1E1E ; /* Немного темнее при наведении */
+  }
+  
+  .order-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .order-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconn{
+    width: 60px;
+    height: 60px;
+  }
+  /* Order icon colors */
+  .order-icon.gold {
+    background-color: #f4ce42; /* Gold for delivering */
+  }
+  
+  .order-icon.purple {
+    background-color: purple; /* Purple for self-pickup */
+  }
+  
+  .order-icon.blue {
+    background-color: #2196F3; /* Blue for delivered */
+  }
+  
+  .order-icon.red {
+    background-color: #E53935; /* Red for on-site */
+  }
+  
+  .order-id {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .arrow-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.expanded {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
+  }
+  
+  /* Order details (collapsible section) */
+  .order-details {
+    margin-top: 10px;
+    padding-left: 50px; /* Indent for stage details */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-stage {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stage-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #f4ce42; /* Border color for stages */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stage-icon.delivered {
+    background-color: #f4ce42; /* Gold for delivered stage */
+    color: white;
+  }
+  
+  .stage-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #c5c5c5;
+  }
+  
+  .stage-info p:first-child {
+    font-weight: bold;
+    color: white;
+  }
+  
+
+
+
+
+  .order-stage {
+    display: flex;
+    align-items: center;
+}
+
+.stage-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease; /* Переход для фильтра */
+}
+
+.stage-icon img {
+    width: 100%; /* Задаем ширину изображения */
+    height: 100%; /* Задаем высоту изображения */
+    border-radius: 50%; /* Закругленные углы */
+}
+
+.order-stage:hover .stage-icon img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(110%); /* Зелёный для доставленных */
+}
+
+.order-stage:hover .stage-icon img.delivering {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%); /* Красный для доставляемых */
+}
+
+.stage-icon.delivered img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(110%); /* Зелёный для доставленных */
+}
+
+.stage-icon.delivering img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%); /* Красный для доставляемых */
+}

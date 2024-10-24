@@ -1,0 +1,152 @@
+.loved-container {
+  background-color: #121212; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 20px 20px 60px 20px; /* Отступы */
+  min-height: 90vh; /* Минимальная высота — 100% высоты окна */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.loved-header {
+  display: flex;
+  align-items: center; /* Центрируем по вертикали */
+}
+.loved-back-button {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+  border: none;
+  cursor: pointer;
+}
+
+.loved-title {
+  flex-grow: 1; /* Позволяет заголовку занимать доступное пространство */
+  text-align: center; /* Центрируем текст заголовка */
+  font-size: 34px; /* Размер заголовка */
+font-weight: 500;
+line-height: 24.2px;
+}
+
+.loved-items {
+  flex-grow: 1; /* Заставляем блок с элементами растягиваться */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение */
+  align-items: center;
+  overflow-y: auto; /* Включаем вертикальную прокрутку при необходимости */
+}
+  .loved-item {
+    display: flex;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    width: 700px; /* Ширина контейнера */
+    height: 96px; /* Высота контейнера */
+    background-color: #1E1E1E; /* Цвет фона для элемента */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px;
+    margin-bottom: 10px; /* Отступ между элементами */
+    gap: 10px; /* Пробел между изображением и деталями */
+    opacity: 1; /* Прозрачность */
+  }
+  
+  .item-image {
+    width: 100%; /* Ширина изображения */
+    height: 100%; /* Высота изображения */
+    border-radius: 10px; /* Закругленные углы для изображения */
+  }
+  .item-im{
+    width: 150px; /* Ширина изображения */
+    height: 100%; /* Высота изображения */
+  }
+  .loved-h2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .loved-p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.52px;
+    text-align: left;
+    color: #6A6A6E;
+  }
+  
+  .loved-item-details {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    width: 100%;
+  }
+  
+  .muni {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loved-krug{
+    display: flex;
+    background:#16151B;
+    width: 10%;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  .loved-item-price, .loved-item-weight {
+    margin: 5px 0; /* Отступы для цен и веса */
+  }
+  .loved-ax{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .loved-item-price {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  .heart-icon, .lock-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 480px) { 
+    .loved-item{
+      width: 345px;
+    }
+    .loved-h2{
+      font-size: 20px;
+    }
+    .loved-p{
+      font-size: 13px;
+    }
+    .loved-item-price{
+      font-size: 22px;
+    }
+    .loved-krug{
+      width: 60px;
+    }
+  }

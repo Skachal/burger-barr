@@ -1,0 +1,62 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Разделяем элементы */
+  background-color: #121212;
+  padding: 5px 0px;
+  z-index: 100;
+}
+
+.footer-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-icon img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(1); /* Иконки по умолчанию черно-белые */
+}
+
+.footer-icon.active img {
+  filter: none; /* Цвет для активной иконки */
+}
+
+/* Стиль для центральной корзины */
+.footer-center {
+  flex-grow: 1;
+  display: flex; /* Центрируем корзину */
+}
+
+.footer-icon.cart {
+  background: linear-gradient(180deg, #E1D24A 0%, #C69223 100%);
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 40px;
+height: 40px;
+
+}
+
+.footer-icon.cart img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-icon.heart img {
+  filter: grayscale(1);
+}
+
+    background-color: black;
+    color: white;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    background: #22222A;
+    background: #19191D;
+    background-color: #333;

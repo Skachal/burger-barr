@@ -1,0 +1,18 @@
+.back-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Для размещения кнопки */
+    top: 20px; /* Отступ от верхнего края */
+    left: 20px; /* Отступ от левого края */
+  }
+  
+    background-color: black;
+    color: white;
+    background: linear-gradient(180deg, #E1D24A 0%, #C69233 100%);
+    background: #22222A;
+    background: #19191D;
+    background-color: #333;

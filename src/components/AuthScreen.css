@@ -1,0 +1,138 @@
+.auth-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(51, 51, 51); /* Фон изменен на насыщенный черный */
+  background-image: url('../image5.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* Черное полупрозрачное затемнение */
+  z-index: 1;
+}
+
+.auth-box { 
+  position: relative;
+  z-index: 2;
+  border-radius: 20px; 
+  text-align: center;
+  color: #d1d1d1;
+  max-width: 400px; 
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nadpis {
+  margin-top: 20px;
+}
+
+.auth-h1 { 
+  color: #E1D24A; /* Ярко-золотистый цвет для заголовка */
+  font-size: 3.5em; 
+  margin-bottom: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.vtorie {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.auth-p { 
+  color: #CCCCCC; /* Светло-серый цвет для текста */
+  font-size: 2.0em;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.login-button, .register-button { 
+  display: block;
+  width: 100%; 
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginn-button { 
+  background: linear-gradient(180deg, #252525 0%, #161616 100%); /* Градиент с темными тонами */
+  width: 100%;
+  padding: 15px;
+  border-radius: 22px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loginn-button:hover {
+  background: linear-gradient(180deg, #474747 0%, #303030 100%); /* Градиент с темными тонами */
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.register-button {
+  background: linear-gradient(180deg, #252525 0%, #161616 100%);
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background: linear-gradient(180deg, #474747 0%, #303030 100%); /* Градиент с темными тонами */
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+@media (max-width: 768px) { 
+  .auth-h1 { 
+    font-size: 3em; 
+  }
+
+  .auth-p { 
+    color: #ffffff;
+    padding-top: 40px;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-align: start;
+  }
+
+  .auth-box { 
+    border-radius: 15px;
+  }
+} 
+
+@media (max-width: 480px) { 
+  .auth-box { 
+    height: 100%;
+  }
+
+  .vtorie {
+    padding: 20px;
+    justify-content: flex-end;
+  }
+}

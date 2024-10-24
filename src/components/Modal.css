@@ -1,0 +1,201 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Убедитесь, что модальное окно поверх других элементов */
+}
+
+.modal-content {
+    background: #2b2b2b; /* Темный фон для модального окна */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: white; /* Цвет текста */
+}
+
+.modal-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.modal-description {
+    font-size: 14px; /* Размер описания */
+    margin-bottom: 10px;
+}
+
+.modal-details {
+    display: flex;
+    justify-content: space-around; /* Распределяем элементы в блоке */
+    align-items: center;
+    margin: 10px 0;
+}
+
+.modal-weight {
+    font-size: 14px; /* Размер текста веса */
+}
+
+.modal-price {
+    font-size: 16px; /* Размер текста цены */
+    font-weight: bold; /* Жирный текст для цены */
+}
+
+.modal-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.modal-quantity-button {
+    background: #f39c12; /* Цвет кнопки */
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-add-to-cart-button {
+    background: #f39c12; /* Цвет кнопки */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-close-button {
+    background: #e74c3c; /* Красный цвет для кнопки закрытия */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.thank-you-message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+.modal-add-to-cart-button:hover,
+.modal-close-button:hover {
+    opacity: 0.8; /* Эффект наведения */
+}
+
+
+.modal-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100px;
+    justify-content: center;
+    height: 50px;
+  }
+  .modal-quantity-button-mn{
+    background-color: rgb(162, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .modal-quantity-button-pl {
+    background-color: rgb(17, 126, 11);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .modal-weight{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+color: #696969;
+  }
+  .modal-krug{
+    display: flex;
+    background:#2c2a32;
+    width: 70px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px
+  }
+.modal-price{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+color: #FFFFFF;
+}
+
+
+  .modal-quantity-value {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  
+.modal-description{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10.52px;
+    text-align: center;
+    color: #6A6A6E;
+margin: 0px;
+}
+
+
+
+
+  .za-button {
+    background: linear-gradient(180deg, #575757 0%, #343434 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 280px;
+    height: 48px;
+    
+  transform: translateY(-5px) scale(0.99);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .za-button:hover {
+    background: none;
+    color: white;
+    
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+    transition: filter 0.3s ease;
+  }

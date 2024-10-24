@@ -1,0 +1,97 @@
+/* Forgot.css */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+.forgot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Занимает всю высоту экрана */
+    background-color: #121212; /* Темный фон */
+    color: white;
+    padding: 20px;
+}
+
+.forgot-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px; /* Ширина формы */
+    align-items: center;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+.submit-button {
+    width: 60%;
+    height: 50px;
+    background: none;
+      border: #252525 1px double;
+      color: rgb(101, 101, 101);
+    padding: 15px;
+    border-radius: 22px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: none;
+      border: #e0e0e0 1px double;
+      color: #ffffff;
+  }
+
+.back-link {
+    margin-top: 15px;
+    color: #6A6A6E;
+    cursor: pointer;
+    width: 200px;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    border-radius: 30px; 
+    align-items: center;
+}
+.back-link:hover{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Легкий тень */
+    color: #ffffff;
+}
+.forgot-h2{
+    font-size: 36px;
+    
+  font-family: "Nerko One", cursive;
+  color: #E1D24A;
+}
+
+
+
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    .forgot-form {
+        width: 90%; /* Уменьшаем ширину формы на мобильных */
+    }
+
+    .email-input {
+        width: 100%; /* Поле ввода на всю ширину экрана */
+    }
+
+    .submit-button {
+        width: 100%; /* Кнопка на всю ширину экрана */
+    }
+
+    .forgot-h2 {
+        font-size: 28px; /* Уменьшаем размер заголовка на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .forgot-h2 {
+        font-size: 24px; /* Дополнительное уменьшение заголовка для маленьких экранов */
+    }
+}

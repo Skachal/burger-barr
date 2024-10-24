@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+  }
+  
+  .payment-content {
+    background: #333333;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .payment-content h1 {
+    margin-bottom: 20px;
+    font-family: "Nerko One", cursive;
+    font-size: 36px;
+    color: #E1D24A;
+  }
+  
+  .payment-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #898989;
+  }
+  
+
+
+
+  .return-button {
+    background: linear-gradient(180deg, #575757 0%, #343434 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 280px;
+    height: 48px;
+    
+  transform: translateY(-5px) scale(0.99);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .return-button:hover {
+    background: none;
+    color: white;
+    
+    filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%);
+    transition: filter 0.3s ease;
+  }
+  
+  @media (max-width: 480px) { 
+    .payment-content{
+      width: 77%;
+
+    }
+    .payment-content h1 {
+      font-size: 25px;
+    }
+    .payment-content p{
+      font-size: 13px;
+    }
+  }
